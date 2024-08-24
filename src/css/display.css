@@ -1,0 +1,56 @@
+.count-down,
+.show-score,
+.play {
+  position: absolute;
+  top: 10px;
+  background: rgb(3, 39, 138);
+  background: radial-gradient(
+    rgb(20, 19, 59),
+    rgb(12, 3, 138),
+    rgb(69, 82, 255)
+  );
+  border: 2px groove grey;
+  border-radius: 30%;
+  padding: 5px;
+  font-size: 1.4rem;
+  box-shadow: 1px 1px 1px 1px rgb(0, 19, 82), -1px -1px 1px 1px rgb(2, 1, 88),
+    inset 0 0 5px black;
+}
+.count-down {
+  left: 10px;
+}
+
+.show-score {
+  right: 10px;
+}
+.play {
+  padding: 5px 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid rgba(125, 125, 131, 0.671);
+  box-shadow: 1px 1px 2px rgb(3, 1, 110), 2px 2px 2px rgb(1, 14, 92),
+    3px 4px 4px rgb(7, 0, 70), 5px 5px 6px rgb(0, 7, 36),
+    inset 2px 2px 2px rgb(179, 179, 179), inset -2px -2px 5px rgb(26, 16, 16);
+  cursor: pointer;
+}
+
+.heading h1 {
+  position: relative;
+  font-size: 3.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 30px;
+  background: rgb(3, 12, 138);
+  background: linear-gradient(rgb(7, 37, 170), rgb(28, 3, 138), black);
+  background-clip: text;
+  color: transparent;
+  text-stroke: 0.5px silver;
+  -webkit-text-stroke: 0.5px silver;
+}
+hr {
+  width: 100%;
+  margin: -40px 0 30px 0;
+  height: 10px;
+  background: linear-gradient(rgb(236, 235, 235), rgb(12, 3, 138), black);
+  border: none;
+  filter: url(#fire);
+}

@@ -1,0 +1,61 @@
+.overlay {
+  position: absolute;
+  top: 0vh;
+  left: 0vh;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(4, 0, 255, 0.158);
+  z-index: 11111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(236, 235, 235, 0.315),
+      rgba(0, 0, 255, 0.384),
+      rgba(0, 0, 0, 0.432)
+    ),
+    linear-gradient(
+      90deg,
+      rgba(47, 0, 255, 0.589),
+      rgba(214, 2, 37, 0.548),
+      rgba(1, 6, 105, 0.315)
+    ),
+    linear-gradient(
+      40deg,
+      rgba(17, 0, 92, 0.603),
+      rgba(3, 38, 236, 0.507),
+      rgba(2, 10, 165, 0.425)
+    );
+  background-size: 100% 100%;
+  background-blend-mode: overlay;
+
+  backdrop-filter: blur(0.1px);
+}
+.start {
+  font-size: 5rem;
+  color: white;
+  background: inherit;
+  border: 1px solid rgba(143, 141, 141, 0.61);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 10px white, 5px 5px 10px black;
+  margin-top: 50px;
+}
+.instructions {
+  font-size: 2rem;
+  text-align: left;
+  align-items: start;
+  /* background: rgba(73, 73, 100, 0.24); */
+  padding: 20px 50px;
+  border-radius: 20px;
+  backdrop-filter: blur(2px);
+  text-shadow: 1px 1px black;
+  box-shadow: -1px -1px 10px white, 2px 2px 10px black;
+}
+.instructions a {
+  color: white;
+  box-shadow: -0.5px -0.5px 2px white, 1px 1px 2px black;
+  padding: 5px;
+  border-radius: 10%;
+}

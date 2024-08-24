@@ -1,0 +1,108 @@
+* {
+  margin: 9;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #392f97;
+  background: radial-gradient(
+      rgba(1, 135, 145, 0.514) 1%,
+      rgba(96, 123, 243, 0.473) 10%,
+      rgba(6, 9, 212, 0.445) 60%
+    ),
+    linear-gradient(
+      45deg,
+      rgba(255, 5, 151, 0.555),
+      rgba(0, 134, 139, 0.493),
+      rgba(0, 71, 67, 0.541)
+    ),
+    linear-gradient(
+      45deg,
+      rgb(255, 131, 228),
+      rgb(28, 139, 0),
+      rgb(255, 131, 228)
+    );
+  background-size: 20px 20px, 20px 20px, 100% 100%;
+  background-blend-mode: overlay;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+      rgba(236, 235, 235, 0.315),
+      rgba(0, 0, 255, 0.384),
+      rgba(0, 0, 0, 0.432)
+    ),
+    linear-gradient(
+      90deg,
+      rgba(47, 0, 255, 0.589),
+      rgba(214, 2, 37, 0.548),
+      rgba(1, 6, 105, 0.315)
+    ),
+    linear-gradient(
+      40deg,
+      rgba(17, 0, 92, 0.603),
+      rgba(3, 38, 236, 0.507),
+      rgba(2, 10, 165, 0.425)
+    );
+  background-size: 100% 100%;
+  background-blend-mode: overlay;
+  opacity: 0.4;
+  backdrop-filter: blur(1px);
+}
+.container {
+  position: relative;
+  padding: 20px 50px;
+  border: 1px solid #aaa;
+  display: flex;
+  flex-direction: column;
+  background: #2b3968;
+  max-width: 80vw;
+  overflow: hidden;
+  box-shadow: inset 5px 5px 10px white, 5px 5px 10px black;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(36, 1, 190),
+    rgb(2, 154, 214),
+    rgb(247, 2, 96)
+  );
+  background-size: 10px 100px;
+  background-blend-mode: overlay;
+  filter: url(#wavy);
+}
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      90deg,
+      rgb(0, 153, 255),
+      rgb(2, 164, 214),
+      rgb(1, 8, 105)
+    ),
+    radial-gradient(circle, rgb(1, 15, 97), rgb(2, 33, 211), rgb(104, 202, 247));
+  background-size: 100% 100%, 5px 5px;
+  background-blend-mode: overlay;
+  z-index: 5;
+  opacity: 0.3;
+  filter: url(#wavy);
+}
+.container div {
+  z-index: 10;
+}
